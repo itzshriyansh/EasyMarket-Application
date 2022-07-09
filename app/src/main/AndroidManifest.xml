@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.easy.market">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BeyondBookRental"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.easy.market.UserprofileActivity"
+            android:exported="false">
+
+        </activity>
+        <activity android:name="com.easy.market.CircularloadingbuttonActivity"
+            android:exported="false"/>
+        <activity android:name="com.easy.market.RequestOtpActivity"
+            android:exported="false"/>
+        <activity android:name="com.easy.market.ForgotActivity"
+            android:exported="false"/>
+        <activity android:name="com.easy.market.UserListActivity"
+            android:exported="false"/>
+        <activity android:name="com.easy.market.AddProductActivity"
+            android:exported="false"/>
+        <activity android:name="com.easy.market.AddSubCategoryActivity"
+            android:exported="false"/>
+        <activity android:name="com.easy.market.AddCategoryActivity" />
+        <activity android:name="com.easy.market.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.easy.market.DashboardNavigationActivity"
+            android:label="Home"
+            android:theme="@style/Theme.BeyondBookRental.NoActionBar"
+            android:exported="false"/>
+        <activity android:name="com.easy.market.OrderViewDetailActivity" android:exported="false"/>
+        <activity android:name="com.easy.market.OrderSuccesfullActivity" android:exported="false"/>
+        <activity android:name="com.easy.market.OrderHistoryActivity" android:exported="false"/>
+        <activity android:name="com.easy.market.ShippingActivity" android:exported="false"/>
+        <activity android:name="com.easy.market.WishlistActivity" android:exported="false"/>
+        <activity android:name="com.easy.market.CartActivity" android:exported="false"/>
+        <activity android:name="com.easy.market.ModernDashActivity" android:exported="false"/>
+        <activity android:name="com.easy.market.ProductDescriptionActivity" android:exported="false"/>
+        <activity android:name="com.easy.market.ProductActivity" android:exported="false"/>
+        <activity android:name="com.easy.market.SubCategoryActivity" android:exported="false"/>
+        <activity
+            android:exported="false"
+            android:name="com.easy.market.SignupActivity"
+            android:theme="@style/Theme.BeyondBookRental.FullScreen" />
+        <activity
+            android:exported="false"
+            android:name="com.easy.market.LoginActivity"
+            android:theme="@style/Theme.BeyondBookRental.FullScreen" />
+        <activity android:name="com.easy.market.MainActivity"
+            android:exported="false"/>
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_74utptkC3udUY5" />
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+    </application>
+
+</manifest>

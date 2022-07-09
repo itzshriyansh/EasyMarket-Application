@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<item
+        android:id="@+id/action_order_history"
+        android:orderInCategory="100"
+        android:title="Order History"
+        app:showAsAction="always"
+        android:icon="@drawable/order_history"/>-->
+    <item
+        android:id="@+id/content_dashboard_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:orderInCategory="100"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_add_to_cart"
+        android:orderInCategory="101"
+        android:title="Add to Cart"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_shopping_cart_white_24dp"/>
+    <item
+        android:id="@+id/action_wishlist"
+        android:orderInCategory="101"
+        android:title="Wishlist"
+        app:showAsAction="always"
+        android:icon="@drawable/wishlist"/>
+</menu>
